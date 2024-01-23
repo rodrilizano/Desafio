@@ -1,0 +1,41 @@
+// Desafío 1: Crea una función que calcule el índice de masa corporal (IMC)
+function calcularIMC(peso, altura) {
+    return peso / (altura * altura);
+}
+
+// Desafío 2: Crea una función que calcule el valor del factorial de un número
+function calcularFactorial(numero) {
+    let factorial = 1;
+    for(let i = 1; i <= numero; i++) {
+        factorial *= i;
+    }
+    return factorial;
+}
+
+// Desafío 3: Crea una función que convierta un valor en dólares a reales
+function convertirDolaresAReales(dolares) {
+    const cotizacionDolar = 4.80;
+    return dolares * cotizacionDolar;
+}
+
+// Desafío 4: Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular
+function calcularAreaPerimetroRectangular(altura, anchura) {
+    const area = altura * anchura;
+    const perimetro = 2 * (altura + anchura);
+    return `El área es ${area} y el perímetro es ${perimetro}.`;
+}
+
+// Desafío 5: Crea una función que muestre en pantalla el área y el perímetro de una sala circular
+function calcularAreaPerimetroCircular(radio) {
+    const pi = 3.14;
+    const area = pi * radio * radio;
+    const perimetro = 2 * pi * radio;
+    return `El área es ${area} y el perímetro es ${perimetro}.`;
+}
+
+// Desafío 6: Crea una función que muestre en pantalla la tabla de multiplicar de un número
+function mostrarTablaMultiplicar(numero) {
+    for(let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
+    }
+}
